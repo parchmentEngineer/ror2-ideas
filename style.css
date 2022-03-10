@@ -1,0 +1,152 @@
+.itemImageSmall {
+	position: absolute;
+	width: 6.75vw;
+	height: 6.75vw;
+}
+.itemImageLarge {
+	position: absolute;
+	width: 256px;
+	height: 256px;
+}
+.itemImageBorder {
+	position: relative;
+	margin: 0px;
+}
+.itemImageHover {
+	transition: background-color 0.25s, border-color 0.25s;
+	background-color: rgba(0, 0, 0, 0.01);
+	border-style: solid;
+	border-color: rgba(0, 0, 0, 0.01);
+	position: absolute;
+	width: 6.75vw;
+	height: 6.75vw;
+}
+.itemImageHover:hover {
+	background-color: rgba(255, 255, 255, 0.3);
+	border-color: rgba(255, 255, 255, 1);
+}
+.itemImageHoverActive {
+	border-color: rgba(255, 255, 255, 1);
+}
+
+body {
+	background-color: #000000;
+	padding-top: 2.5vh;
+}
+
+.itemSelector {
+	padding-top: 2vh;
+	margin-left: 1vw;
+	margin-right: 1vw;
+	border-style: solid;
+	border-color: #868686;
+	background-color: #3E4E5B;
+	width: 22.5vw;
+	height: 95vh;
+}
+.itemData {
+	padding: 5px;
+	margin-left: 1vw;
+	margin-right: 1vw;
+	border-style: solid;
+	border-color: #868686;
+	background-color: #3E4E5B;
+	width: 72.5vw;
+	height: 95vh;
+	position: relative;
+}
+.itemBody {
+	padding: 5px;
+	margin: 5px;
+	border-style: solid;
+	border-color: #1E252B;
+	background-color: #252F38;
+	width: 98%;
+	height: 78vh;
+	position: absolute;
+	bottom: 5px;
+}
+#itemDescription {
+	padding: 5px;
+	margin: 5px;
+	border-style: solid;
+	border-color: #868686;
+	background-color: #3E4E5B;
+	width: 40vw;
+	position: relative;
+}
+#itemImage {
+	position: absolute;
+	width: 350px;
+	height: 350px;
+	right: 35px;
+	top: 10px
+}
+.itemBodyBox {
+	padding: 5px;
+	margin: 5px;
+	border-style: solid;
+	border-color: #868686;
+	background-color: #3E4E5B;
+	width: 40vw;
+	position: relative;
+}
+.itemBodyFont {
+	color: white;
+	font-size: 14px;
+	display: block;
+}
+
+.mainFont {
+	font-family: 'bombardierregular';
+	color: white;
+}
+
+@font-face {
+    font-family: 'bombardierregular';
+    src: url('bombard_-webfont.woff2') format('woff2'),
+         url('bombard_-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.trans {
+	transition: opacity 0.25s;
+}
+.see {
+	opacity: 1;
+}
+.nosee {
+	opacity: 0;
+}
+
+#arrowLeft {
+	position: absolute;
+	right: calc(4.5vw + 20px);
+	top: 10px;
+	width: 4.5vw;
+	height: 4.5vw;
+	border-style: solid;
+	border-color: #1E252B;
+	background-color: #252F38;
+	user-select: none;
+}
+#arrowRight {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	width: 4.5vw;
+	height: 4.5vw;
+	border-style: solid;
+	border-color: #1E252B;
+	background-color: #252F38;
+	user-select: none;
+}
+
+/*
+
+Main Body: Widths. 100vh = margins + itemS + itemD
+	Item Selector: (100vh-margins)-85vh
+
+*/
